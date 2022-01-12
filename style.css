@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #17202A;
+    position: relative;
+    font-family: Arial;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: calc(50% - 33vh / 2);
+    left: calc(50% - 33vw /2);
+    background-color: #71c7ec;
+    width: 33vw;
+    height: 33vh;
+    border-radius: 8px;
+    /* backdrop-filter: blur(10px); */
+}
+
+.active {
+    display: block;
+}
+
+.game-over {
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+}
+.score {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.play {
+    position: absolute;
+    border-radius: 5px;
+    width: 45%;
+    height: 20%;
+    top: 70%;
+    left: calc(50% - 45% / 2);
+    font-size: 40px;
+    cursor: pointer;
+}
