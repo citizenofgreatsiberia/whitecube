@@ -1,45 +1,66 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #17202A;
     position: relative;
-    font-family: Arial;
+    background-color: #34495E;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .modal {
+    user-select: none;
     display: none;
     position: absolute;
     top: calc(50% - 33vh / 2);
     left: calc(50% - 33vw /2);
-    background-color: #71c7ec;
     width: 33vw;
     height: 33vh;
-    border-radius: 8px;
-    /* backdrop-filter: blur(10px); */
 }
 
 .active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.game-over {
+.modal-title {
     text-align: center;
     color: #fff;
     font-size: 70px;
 }
-.score {
+
+.modal-text {
+    padding: 10px;
+    margin: 10px;
+    background-color: #71c7ec;
+    border-radius: 8px;
+    color: #fff;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
 
-.play {
-    position: absolute;
+.modal-btn {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #34495E;
     border-radius: 5px;
-    width: 45%;
-    height: 20%;
-    top: 70%;
-    left: calc(50% - 45% / 2);
     font-size: 40px;
     cursor: pointer;
+    transition: .3s;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px 2px #fff;
 }
